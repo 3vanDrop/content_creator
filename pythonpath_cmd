@@ -1,0 +1,1 @@
+$env:PYTHONPATH = "$env:PYTHONPATH;<ruta que quieres añadir>"

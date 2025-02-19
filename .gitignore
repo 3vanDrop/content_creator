@@ -4,3 +4,4 @@
 *.pyc
 *.log
 local_videos
+logs

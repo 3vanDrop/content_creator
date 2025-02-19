@@ -1,12 +1,13 @@
 """This library has been created using DeepSeek"""
 import ffmpeg
 import os
-from moviepy.video.io.VideoFileClip import VideoFileClip
-from moviepy.video.tools.subtitles import SubtitlesClip
-from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
-from moviepy.video.VideoClip import TextClip
-import pysrt
+import logging
 
+from resources.utils import time_it
+
+logger = logging.getLogger(__name__)
+
+@time_it
 def video_join(*videos, output_resolution="1280x720"):
     # Crear una lista de inputs para ffmpeg
     inputs = [ffmpeg.input(video) for video in videos]
@@ -26,6 +27,7 @@ def video_join(*videos, output_resolution="1280x720"):
     
     return output_path
 
+@time_it
 def video_audio_join(*media, output_resolution="1280x720"):
     # Separar videos y audios
     videos = [m for m in media if m.endswith(('.mp4', '.avi', '.mov'))]
@@ -50,39 +52,55 @@ def video_audio_join(*media, output_resolution="1280x720"):
     # Combinar video y audio
     output_path = "output_with_audio.mp4"
     ffmpeg.output(concatenated_video, concatenated_audio, output_path).run()
-    
+    logger.info(f"Video joined to audio successfully! - {output_path}")
+
     return output_path
 
+@time_it
 def video_join_subs(video_input_path, srt_input_path, output_video):
-    # Cargar el video
-    video = VideoFileClip(video_input_path)
-    
-    # Cargar los subtítulos desde el archivo SRT
-    subs = pysrt.open(srt_input_path)
-    
-    # Convertir los subtítulos a un formato que moviepy pueda entender
-    def generator(txt):
-        return TextClip(
-            txt, 
-            font='Courier',  # Especifica la fuente aquí
-            fontsize=24, 
-            color='white', 
-            bg_color='black', 
-            size=video.size
-        )
-    
-    # Crear el clip de subtítulos
-    subtitles = SubtitlesClip(srt_input_path, generator)
-    
-    # Ajustar los subtítulos al video
-    subtitles = subtitles.set_position(('center', 'bottom'))
-    
-    # Combinar el video con los subtítulos
-    final_video = CompositeVideoClip([video, subtitles])
-    
-    # Guardar el video final
-    final_video.write_videofile(output_video, codec='libx264')
-    
+    # Configuración de los subtítulos
+    subtitle_style = (
+        "force_style="
+        "FontName=Arial,"
+        "FontSize=24,"  # Tamaño de la fuente
+        "PrimaryColour=&H00FFFFFF,"  # Color del texto (blanco)
+        "OutlineColour=&H00000000,"  # Color del borde (negro)
+        "BackColour=&H80000000,"  # Color de fondo (transparente)
+        "BorderStyle=3,"  # Estilo del borde
+        "Outline=1,"  # Grosor del borde
+        "Shadow=0,"  # Sin sombra
+        "Alignment=2"  # Alineación (centrado abajo)
+    )
+
+    # Filtro para los subtítulos
+    subtitle_filter = f"subtitles={srt_input_path}:force_style='{subtitle_style}'"
+
+    # Filtro para el subrayado dinámico
+    underline_filter = (
+        "drawtext="
+        "fontcolor=yellow:"
+        "fontsize=24:"
+        "fontfile=/System/Library/Fonts/Supplemental/Arial.ttf:"  # Ruta a la fuente Arial
+        "text='':"
+        "x=(w-tw)/2:"  # Centrar horizontalmente
+        "y=h-th-10:"  # Posicionar cerca de la parte inferior
+        "box=1:"  # Habilitar fondo
+        "boxcolor=black@0.5:"  # Color del fondo (negro semitransparente)
+        "boxborderw=5:"  # Grosor del borde
+        "enable='between(t,0,10)'"  # Ejemplo: subrayado dinámico entre 0 y 10 segundos
+    )
+
+    # Combinar los filtros
+    filter_complex = f"{subtitle_filter},{underline_filter}"
+
+    # Procesar el video con ffmpeg
+    (
+        ffmpeg
+        .input(video_input_path)
+        .output(output_video, vf=filter_complex)
+        .run(overwrite_output=True)
+    )
+
     # Retornar el path absoluto del video guardado
     return os.path.abspath(output_video)
 

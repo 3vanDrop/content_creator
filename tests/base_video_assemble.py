@@ -43,8 +43,8 @@ class BaseVideoAssemble:
         # Descargar y unir video clips
         all_videos = list()
         for kw in keywords:
-            videos = self.video_downloader.query(name=kw, count=1)
-            all_videos.append(*videos)
+            videos = self.video_downloader.query(name=kw, count=2)
+            all_videos += videos
 
         output_video = video_join(*all_videos)
 

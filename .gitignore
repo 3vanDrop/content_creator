@@ -3,5 +3,6 @@
 *.srt
 *.pyc
 *.log
-local_videos
-logs
+**/local_videos/**
+**/logs/**
+**/__pycache__/**

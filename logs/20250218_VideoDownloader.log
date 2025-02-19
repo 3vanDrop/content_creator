@@ -1,0 +1,331 @@
+2025-02-18 09:48:04,143 - WARNING - ⚠️ No se encontraron más videos en la página 1.
+2025-02-18 09:48:04,562 - WARNING - ⚠️ No se encontraron más videos en la página 2.
+2025-02-18 09:48:05,176 - WARNING - ⚠️ No se encontraron más videos en la página 3.
+2025-02-18 09:48:05,586 - WARNING - ⚠️ No se encontraron más videos en la página 4.
+2025-02-18 09:48:06,097 - WARNING - ⚠️ No se encontraron más videos en la página 5.
+2025-02-18 09:48:06,098 - INFO - ⏱️ Tiempo total para completar la función: 2.50 segundos
+2025-02-18 09:48:28,696 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits
+2025-02-18 09:48:29,034 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_094828_3617005_habits.mp4
+2025-02-18 09:48:29,074 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 09:48:30,080 - INFO - ⏱️ Tiempo total para completar la función: 1.83 segundos
+2025-02-18 09:48:30,914 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/personal development
+2025-02-18 09:48:31,195 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/personal development/20250218_094830_3831853_personal_development.mp4
+2025-02-18 09:48:31,223 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 09:48:32,229 - INFO - ⏱️ Tiempo total para completar la función: 2.15 segundos
+2025-02-18 09:48:32,724 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habit change
+2025-02-18 09:48:33,477 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habit change/20250218_094832_1793314_habit_change.mp4
+2025-02-18 09:48:33,518 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 09:48:34,523 - INFO - ⏱️ Tiempo total para completar la función: 2.29 segundos
+2025-02-18 09:48:35,181 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement
+2025-02-18 09:48:35,355 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_094835_5636880_self_improvement.mp4
+2025-02-18 09:48:35,401 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 09:48:36,406 - INFO - ⏱️ Tiempo total para completar la función: 1.88 segundos
+2025-02-18 09:48:36,818 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/productivity
+2025-02-18 09:48:37,536 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/productivity/20250218_094836_4065924_productivity.mp4
+2025-02-18 09:48:37,579 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 09:48:38,580 - INFO - ⏱️ Tiempo total para completar la función: 2.17 segundos
+2025-02-18 10:06:18,666 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_094828_3617005_habits.mp4
+2025-02-18 10:06:20,045 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_100618_8049570_habits.mp4
+2025-02-18 10:06:20,098 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:06:21,103 - INFO - ⏱️ Tiempo total para completar la función: 3.03 segundos
+2025-02-18 10:07:00,940 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_094828_3617005_habits.mp4
+2025-02-18 10:07:00,941 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_100618_8049570_habits.mp4
+2025-02-18 10:07:01,947 - INFO - ⏱️ Tiempo total para completar la función: 1.33 segundos
+2025-02-18 10:08:01,603 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_094828_3617005_habits.mp4
+2025-02-18 10:08:01,604 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_100618_8049570_habits.mp4
+2025-02-18 10:08:02,609 - INFO - ⏱️ Tiempo total para completar la función: 1.33 segundos
+2025-02-18 10:08:56,567 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_094828_3617005_habits.mp4
+2025-02-18 10:08:56,568 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_100618_8049570_habits.mp4
+2025-02-18 10:08:57,570 - INFO - ⏱️ Tiempo total para completar la función: 1.49 segundos
+2025-02-18 10:08:58,001 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth
+2025-02-18 10:08:58,388 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_1620052_growth.mp4
+2025-02-18 10:08:58,436 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:09:01,921 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_4503294_growth.mp4
+2025-02-18 10:09:01,962 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:09:02,964 - INFO - ⏱️ Tiempo total para completar la función: 5.39 segundos
+2025-02-18 10:09:03,507 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success
+2025-02-18 10:09:04,484 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100903_3254013_success.mp4
+2025-02-18 10:09:04,536 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:09:05,212 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100904_4105022_success.mp4
+2025-02-18 10:09:05,260 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:09:06,265 - INFO - ⏱️ Tiempo total para completar la función: 3.30 segundos
+2025-02-18 10:09:06,807 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity
+2025-02-18 10:09:07,196 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100906_8180600_identity.mp4
+2025-02-18 10:09:07,241 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:09:07,411 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100907_7640667_identity.mp4
+2025-02-18 10:09:07,450 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:09:08,455 - INFO - ⏱️ Tiempo total para completar la función: 2.19 segundos
+2025-02-18 10:09:08,957 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_094835_5636880_self_improvement.mp4
+2025-02-18 10:09:09,332 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_100908_6185623_self_improvement.mp4
+2025-02-18 10:09:09,378 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:09:10,383 - INFO - ⏱️ Tiempo total para completar la función: 1.93 segundos
+2025-02-18 10:09:10,800 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change
+2025-02-18 10:09:11,077 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100910_1793414_change.mp4
+2025-02-18 10:09:11,127 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:09:11,340 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100911_3825382_change.mp4
+2025-02-18 10:09:11,390 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 10:09:12,395 - INFO - ⏱️ Tiempo total para completar la función: 2.01 segundos
+2025-02-18 11:13:59,402 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_094828_3617005_habits.mp4
+2025-02-18 11:13:59,403 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_100618_8049570_habits.mp4
+2025-02-18 11:14:00,405 - INFO - ⏱️ Tiempo total para completar la función: 1.33 segundos
+2025-02-18 11:14:00,723 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_1620052_growth.mp4
+2025-02-18 11:14:00,723 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_4503294_growth.mp4
+2025-02-18 11:14:01,728 - INFO - ⏱️ Tiempo total para completar la función: 1.32 segundos
+2025-02-18 11:14:02,141 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100903_3254013_success.mp4
+2025-02-18 11:14:02,141 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100904_4105022_success.mp4
+2025-02-18 11:14:03,142 - INFO - ⏱️ Tiempo total para completar la función: 1.41 segundos
+2025-02-18 11:14:03,419 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100906_8180600_identity.mp4
+2025-02-18 11:14:03,420 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100907_7640667_identity.mp4
+2025-02-18 11:14:04,425 - INFO - ⏱️ Tiempo total para completar la función: 1.28 segundos
+2025-02-18 11:14:04,791 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_094835_5636880_self_improvement.mp4
+2025-02-18 11:14:04,792 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_100908_6185623_self_improvement.mp4
+2025-02-18 11:14:05,797 - INFO - ⏱️ Tiempo total para completar la función: 1.37 segundos
+2025-02-18 11:14:06,167 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100910_1793414_change.mp4
+2025-02-18 11:14:06,167 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100911_3825382_change.mp4
+2025-02-18 11:14:07,170 - INFO - ⏱️ Tiempo total para completar la función: 1.37 segundos
+2025-02-18 11:16:01,020 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_094828_3617005_habits.mp4
+2025-02-18 11:16:01,022 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_100618_8049570_habits.mp4
+2025-02-18 11:16:02,025 - INFO - ⏱️ Tiempo total para completar la función: 1.35 segundos
+2025-02-18 11:16:02,314 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_1620052_growth.mp4
+2025-02-18 11:16:02,314 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_4503294_growth.mp4
+2025-02-18 11:16:03,317 - INFO - ⏱️ Tiempo total para completar la función: 1.29 segundos
+2025-02-18 11:16:03,596 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100903_3254013_success.mp4
+2025-02-18 11:16:03,597 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100904_4105022_success.mp4
+2025-02-18 11:16:04,602 - INFO - ⏱️ Tiempo total para completar la función: 1.28 segundos
+2025-02-18 11:16:04,926 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100906_8180600_identity.mp4
+2025-02-18 11:16:04,926 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100907_7640667_identity.mp4
+2025-02-18 11:16:05,931 - INFO - ⏱️ Tiempo total para completar la función: 1.33 segundos
+2025-02-18 11:16:06,258 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_094835_5636880_self_improvement.mp4
+2025-02-18 11:16:06,258 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_100908_6185623_self_improvement.mp4
+2025-02-18 11:16:07,259 - INFO - ⏱️ Tiempo total para completar la función: 1.33 segundos
+2025-02-18 11:16:07,542 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100910_1793414_change.mp4
+2025-02-18 11:16:07,543 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100911_3825382_change.mp4
+2025-02-18 11:16:08,544 - INFO - ⏱️ Tiempo total para completar la función: 1.28 segundos
+2025-02-18 11:20:22,864 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_094828_3617005_habits.mp4
+2025-02-18 11:20:22,866 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_100618_8049570_habits.mp4
+2025-02-18 11:20:23,868 - INFO - ⏱️ Tiempo total para completar la función: 1.33 segundos
+2025-02-18 11:20:24,160 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_1620052_growth.mp4
+2025-02-18 11:20:24,161 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_4503294_growth.mp4
+2025-02-18 11:20:25,164 - INFO - ⏱️ Tiempo total para completar la función: 1.29 segundos
+2025-02-18 11:20:25,476 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100903_3254013_success.mp4
+2025-02-18 11:20:25,477 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100904_4105022_success.mp4
+2025-02-18 11:20:26,478 - INFO - ⏱️ Tiempo total para completar la función: 1.31 segundos
+2025-02-18 11:20:26,801 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100906_8180600_identity.mp4
+2025-02-18 11:20:26,802 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100907_7640667_identity.mp4
+2025-02-18 11:20:27,805 - INFO - ⏱️ Tiempo total para completar la función: 1.33 segundos
+2025-02-18 11:20:28,112 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_094835_5636880_self_improvement.mp4
+2025-02-18 11:20:28,112 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_100908_6185623_self_improvement.mp4
+2025-02-18 11:20:29,113 - INFO - ⏱️ Tiempo total para completar la función: 1.31 segundos
+2025-02-18 11:20:29,412 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100910_1793414_change.mp4
+2025-02-18 11:20:29,413 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100911_3825382_change.mp4
+2025-02-18 11:20:30,416 - INFO - ⏱️ Tiempo total para completar la función: 1.30 segundos
+2025-02-18 17:24:57,649 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162715_1111421_food.mp4
+2025-02-18 17:24:57,650 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162715_3195650_food.mp4
+2025-02-18 17:24:57,650 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162716_3015488_food.mp4
+2025-02-18 17:24:57,651 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162717_856399_food.mp4
+2025-02-18 17:24:57,651 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162717_2620043_food.mp4
+2025-02-18 17:24:58,652 - INFO - ⏱️ Tiempo total para completar la función: 1.49 segundos
+2025-02-18 17:28:42,671 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/stars/20250217_162710_1877846_stars.mp4
+2025-02-18 17:28:42,672 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/stars/20250217_162711_1926295_stars.mp4
+2025-02-18 17:28:43,675 - INFO - ⏱️ Tiempo total para completar la función: 1.42 segundos
+2025-02-18 17:28:53,648 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/stars/20250217_162710_1877846_stars.mp4
+2025-02-18 17:28:53,649 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/stars/20250217_162711_1926295_stars.mp4
+2025-02-18 17:28:54,654 - INFO - ⏱️ Tiempo total para completar la función: 1.38 segundos
+2025-02-18 17:35:56,655 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/relativity/20250217_173242_30746050_relativity.mp4
+2025-02-18 17:35:57,661 - INFO - ⏱️ Tiempo total para completar la función: 1.44 segundos
+2025-02-18 17:35:58,128 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/time/20250217_173243_1196530_time.mp4
+2025-02-18 17:35:59,132 - INFO - ⏱️ Tiempo total para completar la función: 1.47 segundos
+2025-02-18 17:35:59,542 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/gravity/20250217_173246_2833611_gravity.mp4
+2025-02-18 17:36:00,547 - INFO - ⏱️ Tiempo total para completar la función: 1.41 segundos
+2025-02-18 17:36:01,061 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space/20250217_162707_1851190_space.mp4
+2025-02-18 17:36:02,067 - INFO - ⏱️ Tiempo total para completar la función: 1.52 segundos
+2025-02-18 17:36:02,638 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/speed/20250217_173250_2257256_speed.mp4
+2025-02-18 17:36:03,642 - INFO - ⏱️ Tiempo total para completar la función: 1.57 segundos
+2025-02-18 17:36:34,252 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/relativity/20250217_173242_30746050_relativity.mp4
+2025-02-18 17:36:35,255 - INFO - ⏱️ Tiempo total para completar la función: 1.31 segundos
+2025-02-18 17:36:35,607 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/time/20250217_173243_1196530_time.mp4
+2025-02-18 17:36:36,609 - INFO - ⏱️ Tiempo total para completar la función: 1.35 segundos
+2025-02-18 17:36:36,943 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/gravity/20250217_173246_2833611_gravity.mp4
+2025-02-18 17:36:37,945 - INFO - ⏱️ Tiempo total para completar la función: 1.33 segundos
+2025-02-18 17:36:38,351 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space/20250217_162707_1851190_space.mp4
+2025-02-18 17:36:39,356 - INFO - ⏱️ Tiempo total para completar la función: 1.41 segundos
+2025-02-18 17:36:39,678 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/speed/20250217_173250_2257256_speed.mp4
+2025-02-18 17:36:40,679 - INFO - ⏱️ Tiempo total para completar la función: 1.32 segundos
+2025-02-18 17:37:09,743 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/relativity/20250217_173242_30746050_relativity.mp4
+2025-02-18 17:37:10,749 - INFO - ⏱️ Tiempo total para completar la función: 1.34 segundos
+2025-02-18 17:37:11,066 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/time/20250217_173243_1196530_time.mp4
+2025-02-18 17:37:12,068 - INFO - ⏱️ Tiempo total para completar la función: 1.32 segundos
+2025-02-18 17:37:12,431 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/gravity/20250217_173246_2833611_gravity.mp4
+2025-02-18 17:37:13,436 - INFO - ⏱️ Tiempo total para completar la función: 1.37 segundos
+2025-02-18 17:37:13,730 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space/20250217_162707_1851190_space.mp4
+2025-02-18 17:37:14,734 - INFO - ⏱️ Tiempo total para completar la función: 1.30 segundos
+2025-02-18 17:37:15,043 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/speed/20250217_173250_2257256_speed.mp4
+2025-02-18 17:37:16,044 - INFO - ⏱️ Tiempo total para completar la función: 1.31 segundos
+2025-02-18 17:38:15,694 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/relativity/20250217_173242_30746050_relativity.mp4
+2025-02-18 17:38:16,700 - INFO - ⏱️ Tiempo total para completar la función: 1.29 segundos
+2025-02-18 17:38:16,981 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/time/20250217_173243_1196530_time.mp4
+2025-02-18 17:38:17,983 - INFO - ⏱️ Tiempo total para completar la función: 1.28 segundos
+2025-02-18 17:38:18,270 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/gravity/20250217_173246_2833611_gravity.mp4
+2025-02-18 17:38:19,280 - INFO - ⏱️ Tiempo total para completar la función: 1.29 segundos
+2025-02-18 17:38:19,739 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space/20250217_162707_1851190_space.mp4
+2025-02-18 17:38:20,742 - INFO - ⏱️ Tiempo total para completar la función: 1.43 segundos
+2025-02-18 17:38:21,064 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/speed/20250217_173250_2257256_speed.mp4
+2025-02-18 17:38:22,066 - INFO - ⏱️ Tiempo total para completar la función: 1.32 segundos
+2025-02-18 17:39:39,364 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162715_1111421_food.mp4
+2025-02-18 17:39:39,366 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162715_3195650_food.mp4
+2025-02-18 17:39:39,366 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162716_3015488_food.mp4
+2025-02-18 17:39:39,366 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162717_856399_food.mp4
+2025-02-18 17:39:39,366 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162717_2620043_food.mp4
+2025-02-18 17:39:40,369 - INFO - ⏱️ Tiempo total para completar la función: 1.40 segundos
+2025-02-18 17:39:57,452 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162715_1111421_food.mp4
+2025-02-18 17:39:57,456 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162715_3195650_food.mp4
+2025-02-18 17:39:57,456 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162716_3015488_food.mp4
+2025-02-18 17:39:57,456 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162717_856399_food.mp4
+2025-02-18 17:39:57,456 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162717_2620043_food.mp4
+2025-02-18 17:39:58,458 - INFO - ⏱️ Tiempo total para completar la función: 1.30 segundos
+2025-02-18 17:40:59,866 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162715_1111421_food.mp4
+2025-02-18 17:40:59,867 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162715_3195650_food.mp4
+2025-02-18 17:40:59,867 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162716_3015488_food.mp4
+2025-02-18 17:40:59,867 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162717_856399_food.mp4
+2025-02-18 17:40:59,868 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/food/20250217_162717_2620043_food.mp4
+2025-02-18 17:41:00,869 - INFO - ⏱️ Tiempo total para completar la función: 1.32 segundos
+2025-02-18 17:42:54,596 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/relativity/20250217_173242_30746050_relativity.mp4
+2025-02-18 17:42:55,601 - INFO - ⏱️ Tiempo total para completar la función: 1.41 segundos
+2025-02-18 17:42:55,950 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/time/20250217_173243_1196530_time.mp4
+2025-02-18 17:42:56,951 - INFO - ⏱️ Tiempo total para completar la función: 1.35 segundos
+2025-02-18 17:42:57,362 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/gravity/20250217_173246_2833611_gravity.mp4
+2025-02-18 17:42:58,364 - INFO - ⏱️ Tiempo total para completar la función: 1.41 segundos
+2025-02-18 17:42:58,663 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space/20250217_162707_1851190_space.mp4
+2025-02-18 17:42:59,664 - INFO - ⏱️ Tiempo total para completar la función: 1.30 segundos
+2025-02-18 17:43:00,034 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/speed/20250217_173250_2257256_speed.mp4
+2025-02-18 17:43:01,035 - INFO - ⏱️ Tiempo total para completar la función: 1.37 segundos
+2025-02-18 17:45:04,754 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_094828_3617005_habits.mp4
+2025-02-18 17:45:04,756 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/habits/20250218_100618_8049570_habits.mp4
+2025-02-18 17:45:05,758 - INFO - ⏱️ Tiempo total para completar la función: 1.42 segundos
+2025-02-18 17:45:06,160 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_1620052_growth.mp4
+2025-02-18 17:45:06,160 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/growth/20250218_100858_4503294_growth.mp4
+2025-02-18 17:45:07,165 - INFO - ⏱️ Tiempo total para completar la función: 1.41 segundos
+2025-02-18 17:45:07,556 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100903_3254013_success.mp4
+2025-02-18 17:45:07,557 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/success/20250218_100904_4105022_success.mp4
+2025-02-18 17:45:08,562 - INFO - ⏱️ Tiempo total para completar la función: 1.40 segundos
+2025-02-18 17:45:08,997 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100906_8180600_identity.mp4
+2025-02-18 17:45:08,998 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/identity/20250218_100907_7640667_identity.mp4
+2025-02-18 17:45:10,001 - INFO - ⏱️ Tiempo total para completar la función: 1.44 segundos
+2025-02-18 17:45:10,471 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_094835_5636880_self_improvement.mp4
+2025-02-18 17:45:10,472 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/self improvement/20250218_100908_6185623_self_improvement.mp4
+2025-02-18 17:45:11,477 - INFO - ⏱️ Tiempo total para completar la función: 1.48 segundos
+2025-02-18 17:45:11,872 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100910_1793414_change.mp4
+2025-02-18 17:45:11,873 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/change/20250218_100911_3825382_change.mp4
+2025-02-18 17:45:12,878 - INFO - ⏱️ Tiempo total para completar la función: 1.40 segundos
+2025-02-18 18:17:09,955 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Halo
+2025-02-18 18:17:11,073 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Halo/20250218_181709_4990245_Halo.mp4
+2025-02-18 18:17:11,128 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:11,732 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Halo/20250218_181711_856319_Halo.mp4
+2025-02-18 18:17:11,789 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:12,552 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Halo/20250218_181711_4297707_Halo.mp4
+2025-02-18 18:17:12,605 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:13,606 - INFO - ⏱️ Tiempo total para completar la función: 4.12 segundos
+2025-02-18 18:17:14,087 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Reach
+2025-02-18 18:17:14,431 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Reach/20250218_181714_3196210_Reach.mp4
+2025-02-18 18:17:14,483 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:14,716 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Reach/20250218_181714_8928261_Reach.mp4
+2025-02-18 18:17:14,759 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:15,040 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Reach/20250218_181714_4769453_Reach.mp4
+2025-02-18 18:17:15,074 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:16,077 - INFO - ⏱️ Tiempo total para completar la función: 2.47 segundos
+2025-02-18 18:17:16,489 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Bungie
+2025-02-18 18:17:17,422 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Bungie/20250218_181716_28639844_Bungie.mp4
+2025-02-18 18:17:17,478 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:19,160 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Bungie/20250218_181717_855448_Bungie.mp4
+2025-02-18 18:17:19,212 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:20,977 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Bungie/20250218_181719_5092987_Bungie.mp4
+2025-02-18 18:17:21,030 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:22,036 - INFO - ⏱️ Tiempo total para completar la función: 5.96 segundos
+2025-02-18 18:17:22,445 - WARNING - ⚠️ No se encontraron más videos en la página 1.
+2025-02-18 18:17:22,757 - WARNING - ⚠️ No se encontraron más videos en la página 2.
+2025-02-18 18:17:23,088 - WARNING - ⚠️ No se encontraron más videos en la página 3.
+2025-02-18 18:17:23,418 - WARNING - ⚠️ No se encontraron más videos en la página 4.
+2025-02-18 18:17:23,806 - WARNING - ⚠️ No se encontraron más videos en la página 5.
+2025-02-18 18:17:23,807 - INFO - ⏱️ Tiempo total para completar la función: 1.77 segundos
+2025-02-18 18:17:24,292 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Covenant
+2025-02-18 18:17:24,977 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Covenant/20250218_181724_6266113_Covenant.mp4
+2025-02-18 18:17:25,016 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:25,706 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Covenant/20250218_181725_5679002_Covenant.mp4
+2025-02-18 18:17:25,764 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:31,393 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Covenant/20250218_181725_7189454_Covenant.mp4
+2025-02-18 18:17:31,453 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:32,459 - INFO - ⏱️ Tiempo total para completar la función: 8.65 segundos
+2025-02-18 18:17:32,895 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer
+2025-02-18 18:17:33,580 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer/20250218_181732_4291570_multiplayer.mp4
+2025-02-18 18:17:33,628 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:35,283 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer/20250218_181733_4842505_multiplayer.mp4
+2025-02-18 18:17:35,339 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:35,726 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer/20250218_181735_7914851_multiplayer.mp4
+2025-02-18 18:17:35,787 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:17:36,792 - INFO - ⏱️ Tiempo total para completar la función: 4.33 segundos
+2025-02-18 18:18:45,650 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Halo/20250218_181709_4990245_Halo.mp4
+2025-02-18 18:18:45,651 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Halo/20250218_181711_856319_Halo.mp4
+2025-02-18 18:18:45,651 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Halo/20250218_181711_4297707_Halo.mp4
+2025-02-18 18:18:46,652 - INFO - ⏱️ Tiempo total para completar la función: 1.33 segundos
+2025-02-18 18:18:46,963 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Reach/20250218_181714_3196210_Reach.mp4
+2025-02-18 18:18:46,964 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Reach/20250218_181714_8928261_Reach.mp4
+2025-02-18 18:18:46,964 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Reach/20250218_181714_4769453_Reach.mp4
+2025-02-18 18:18:47,969 - INFO - ⏱️ Tiempo total para completar la función: 1.32 segundos
+2025-02-18 18:18:48,360 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Bungie/20250218_181716_28639844_Bungie.mp4
+2025-02-18 18:18:48,361 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Bungie/20250218_181717_855448_Bungie.mp4
+2025-02-18 18:18:48,361 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Bungie/20250218_181719_5092987_Bungie.mp4
+2025-02-18 18:18:49,364 - INFO - ⏱️ Tiempo total para completar la función: 1.39 segundos
+2025-02-18 18:18:49,662 - WARNING - ⚠️ No se encontraron más videos en la página 1.
+2025-02-18 18:18:49,976 - WARNING - ⚠️ No se encontraron más videos en la página 2.
+2025-02-18 18:18:50,283 - WARNING - ⚠️ No se encontraron más videos en la página 3.
+2025-02-18 18:18:50,550 - WARNING - ⚠️ No se encontraron más videos en la página 4.
+2025-02-18 18:18:50,854 - WARNING - ⚠️ No se encontraron más videos en la página 5.
+2025-02-18 18:18:50,855 - INFO - ⏱️ Tiempo total para completar la función: 1.49 segundos
+2025-02-18 18:18:51,157 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Covenant/20250218_181724_6266113_Covenant.mp4
+2025-02-18 18:18:51,158 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Covenant/20250218_181725_5679002_Covenant.mp4
+2025-02-18 18:18:51,158 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/Covenant/20250218_181725_7189454_Covenant.mp4
+2025-02-18 18:18:52,159 - INFO - ⏱️ Tiempo total para completar la función: 1.30 segundos
+2025-02-18 18:18:52,472 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer/20250218_181732_4291570_multiplayer.mp4
+2025-02-18 18:18:52,472 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer/20250218_181733_4842505_multiplayer.mp4
+2025-02-18 18:18:52,472 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer/20250218_181735_7914851_multiplayer.mp4
+2025-02-18 18:18:53,477 - INFO - ⏱️ Tiempo total para completar la función: 1.32 segundos
+2025-02-18 18:23:52,449 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/videogame
+2025-02-18 18:23:55,515 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/videogame/20250218_182352_4842505_videogame.mp4
+2025-02-18 18:23:55,572 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:23:56,150 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/videogame/20250218_182355_4842593_videogame.mp4
+2025-02-18 18:23:56,211 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:09,143 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/videogame/20250218_182356_4842503_videogame.mp4
+2025-02-18 18:24:09,208 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:10,211 - INFO - ⏱️ Tiempo total para completar la función: 18.21 segundos
+2025-02-18 18:24:10,664 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/games
+2025-02-18 18:24:11,099 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/games/20250218_182410_2466571_games.mp4
+2025-02-18 18:24:11,154 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:14,080 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/games/20250218_182411_2928382_games.mp4
+2025-02-18 18:24:14,143 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:22,376 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/games/20250218_182414_979689_games.mp4
+2025-02-18 18:24:22,442 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:23,447 - INFO - ⏱️ Tiempo total para completar la función: 13.24 segundos
+2025-02-18 18:24:24,034 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space/20250217_162707_1851190_space.mp4
+2025-02-18 18:24:24,035 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space/20250217_162707_856309_space.mp4
+2025-02-18 18:24:24,035 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space/20250217_162707_854228_space.mp4
+2025-02-18 18:24:25,036 - INFO - ⏱️ Tiempo total para completar la función: 1.59 segundos
+2025-02-18 18:24:25,465 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/spaceships
+2025-02-18 18:24:26,888 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/spaceships/20250218_182425_30754963_spaceships.mp4
+2025-02-18 18:24:26,935 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:27,521 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/spaceships/20250218_182426_2759477_spaceships.mp4
+2025-02-18 18:24:27,587 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:30,829 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/spaceships/20250218_182427_2759484_spaceships.mp4
+2025-02-18 18:24:30,940 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:31,945 - INFO - ⏱️ Tiempo total para completar la función: 6.91 segundos
+2025-02-18 18:24:32,265 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer/20250218_181732_4291570_multiplayer.mp4
+2025-02-18 18:24:32,265 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer/20250218_181733_4842505_multiplayer.mp4
+2025-02-18 18:24:32,266 - DEBUG - ✅ Video reutilizado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/multiplayer/20250218_181735_7914851_multiplayer.mp4
+2025-02-18 18:24:33,271 - INFO - ⏱️ Tiempo total para completar la función: 1.32 segundos
+2025-02-18 18:24:34,084 - DEBUG - 📁 Carpeta creada: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space soldier
+2025-02-18 18:24:38,085 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space soldier/20250218_182434_8059307_space_soldier.mp4
+2025-02-18 18:24:38,143 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:38,440 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space soldier/20250218_182438_29684338_space_soldier.mp4
+2025-02-18 18:24:38,503 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:39,231 - INFO - ✅ Video guardado: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/space soldier/20250218_182438_8059308_space_soldier.mp4
+2025-02-18 18:24:39,297 - INFO - ✅ Metadatos actualizados en: /Users/karinalizarraga/jenkins-python-pipeline/local_videos/metadatos.yaml
+2025-02-18 18:24:40,302 - INFO - ⏱️ Tiempo total para completar la función: 7.03 segundos

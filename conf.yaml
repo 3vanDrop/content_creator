@@ -1,0 +1,3 @@
+- VideoDownloader:
+    carpeta_videos: /Users/karinalizarraga/jenkins-python-pipeline/local_videos  # Ruta absoluta de la carpeta de videos
+    carpeta_logs: /Users/karinalizarraga/jenkins-python-pipeline/logs

@@ -46,3 +46,10 @@ def video_audio_join(*media, output_resolution="1280x720"):
     ffmpeg.output(concatenated_video, concatenated_audio, output_path).run()
     
     return output_path
+
+if __name__ == "__main__":
+    from .buscar_clips import VideoDownloader
+
+    video_downloader = VideoDownloader(debug=True)  # Activar mensajes de depuración en la consola
+    videos = video_downloader.query(name="food", count=2)
+    video_join(*videos)

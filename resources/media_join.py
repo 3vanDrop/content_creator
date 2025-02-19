@@ -1,5 +1,11 @@
 """This library has been created using DeepSeek"""
 import ffmpeg
+import os
+from moviepy.video.io.VideoFileClip import VideoFileClip
+from moviepy.video.tools.subtitles import SubtitlesClip
+from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
+from moviepy.video.VideoClip import TextClip
+import pysrt
 
 def video_join(*videos, output_resolution="1280x720"):
     # Crear una lista de inputs para ffmpeg
@@ -46,6 +52,40 @@ def video_audio_join(*media, output_resolution="1280x720"):
     ffmpeg.output(concatenated_video, concatenated_audio, output_path).run()
     
     return output_path
+
+def video_join_subs(video_input_path, srt_input_path, output_video):
+    # Cargar el video
+    video = VideoFileClip(video_input_path)
+    
+    # Cargar los subtítulos desde el archivo SRT
+    subs = pysrt.open(srt_input_path)
+    
+    # Convertir los subtítulos a un formato que moviepy pueda entender
+    def generator(txt):
+        return TextClip(
+            txt, 
+            font='Courier',  # Especifica la fuente aquí
+            fontsize=24, 
+            color='white', 
+            bg_color='black', 
+            size=video.size
+        )
+    
+    # Crear el clip de subtítulos
+    subtitles = SubtitlesClip(srt_input_path, generator)
+    
+    # Ajustar los subtítulos al video
+    subtitles = subtitles.set_position(('center', 'bottom'))
+    
+    # Combinar el video con los subtítulos
+    final_video = CompositeVideoClip([video, subtitles])
+    
+    # Guardar el video final
+    final_video.write_videofile(output_video, codec='libx264')
+    
+    # Retornar el path absoluto del video guardado
+    return os.path.abspath(output_video)
+
 
 if __name__ == "__main__":
     from resources.buscar_clips import VideoDownloader

@@ -1,9 +1,9 @@
 - VideoDownloader:
-    carpeta_videos: C:\Users\erick\OneDrive\Escritorio\Content_creator\content_creator\local_videos  # Ruta absoluta de la carpeta de videos
-    carpeta_logs: C:\Users\erick\OneDrive\Escritorio\Content_creator\content_creator\logs
+    carpeta_videos: local_videos  # Ruta absoluta de la carpeta de videos
+    carpeta_logs: slogs
 
 - testing_samples:
     video_with_audio: testing_samples\output_with_audio.mp4
     video_no_audio: testing_samples\output_joined.mp4
-    audio_mp3: testing_samples\voz_generada.mp3
+    audio_mp3: testsing_samples\voz_generada.mp3
     subtitles_srt: testing_samples\subtitles.srt

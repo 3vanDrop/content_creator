@@ -1,7 +1,7 @@
 import whisper  
 import sys
 
-def generar_subtitulos(video_path, output_srt_path="subtitles.srt", model_size="small"):
+def generar_subtitulos(video_path, output_srt_path="subtitles.srt", model_size="base"):
     """
     Genera un archivo de subtítulos en formato SRT a partir de un video.
 

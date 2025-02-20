@@ -1,5 +1,7 @@
+import os
 import logging
 import time
+import yaml
 from functools import wraps
 
 # Configura el logger
@@ -26,3 +28,28 @@ def time_it(func):
         
         return result
     return wrapper
+
+
+def read_yaml_conf(yaml_path=os.path.join(os.getcwd(), "conf.yaml")):
+    """Carga la configuración desde el archivo conf.yaml."""
+    with open(yaml_path, "r") as f:
+        try:
+            config = yaml.safe_load(f)
+            if not config:
+                logger.warning("⚠️ El archivo de configuración está vacío. Usando valores por defecto.")
+                return {}
+
+            # Convertir la lista de configuraciones en un diccionario
+            config_dict = {}
+            for item in config:
+                if isinstance(item, dict):
+                    config_dict.update(item)
+            return config_dict
+
+        except yaml.YAMLError as e:
+            logger.error(f"❌ Error al leer el archivo de configuración: {e}")
+            return {}
+
+
+if __name__ == "__main__":
+    read_yaml_conf(yaml_path=r"C:\Users\erick\OneDrive\Escritorio\Content_creator\content_creator\conf.yaml")

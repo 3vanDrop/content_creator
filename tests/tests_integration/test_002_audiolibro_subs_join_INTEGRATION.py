@@ -1,9 +1,11 @@
+import random
 from resources.subtitles import generar_subtitulos
-from tests.base_video_assemble import BaseVideoAssemble
+from resources.media_join import video_join_subs
+from tests.base_test import BaseTest
 
-class TestGenerateSubs(BaseVideoAssemble):
+class TestGenerateSubs(BaseTest):
 
-    def test_generate_subtitules_audiolibro(self):
+    def test_audiolibro_subs_join(self):
         """Generate subtitles from video with audio"""
         script = [
             "¡Bienvenidos nuevamente a mi canal!",
@@ -20,11 +22,19 @@ class TestGenerateSubs(BaseVideoAssemble):
             "Si te gustó este video, no olvides dar Like y suscribirte para ver más contenido sobre crecimiento personal. ¡Nos vemos en el próximo video!"
         ]
         self.logger.info("Creating video with audio...")
+        keywords = ["habits", "growth", "success", "identity", "self improvement", "change"]
+        random.shuffle(keywords)
         video_with_audio = self.create_video_with_audio(
-            keywords=["habits", "growth", "success", "identity", "self improvement", "change"],
+            keywords=keywords,
             tts_text=" ".join(script))
         assert self.file_exists(video_with_audio), "Video with Audio shall Exist!"
 
         self.logger.info("Generating subtitles...")
         srt_output = generar_subtitulos(video_with_audio)
         assert self.file_exists(srt_output), "SRT Subtitles shall Exist!"
+
+        self.logger.info("Joining video + subtitles...")
+        video_with_subs = video_join_subs(video_input_path=video_with_audio,
+                                          srt_input_path=srt_output,
+                                          output_video="output_with_subtitles.mp4")
+        assert self.file_exists(video_with_subs), "Video with subs shall Exist!"

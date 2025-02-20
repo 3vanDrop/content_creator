@@ -1,6 +1,7 @@
 """This library has been created using DeepSeek"""
 import ffmpeg
 import os
+import sys
 import logging
 
 from resources.utils import time_it
@@ -58,52 +59,40 @@ def video_audio_join(*media, output_resolution="1280x720"):
 
 @time_it
 def video_join_subs(video_input_path, srt_input_path, output_video):
-    # Configuración de los subtítulos
-    subtitle_style = (
-        "force_style="
-        "FontName=Arial,"
-        "FontSize=24,"  # Tamaño de la fuente
-        "PrimaryColour=&H00FFFFFF,"  # Color del texto (blanco)
-        "OutlineColour=&H00000000,"  # Color del borde (negro)
-        "BackColour=&H80000000,"  # Color de fondo (transparente)
-        "BorderStyle=3,"  # Estilo del borde
-        "Outline=1,"  # Grosor del borde
-        "Shadow=0,"  # Sin sombra
-        "Alignment=2"  # Alineación (centrado abajo)
-    )
+    # Convertir rutas a formato absoluto
+    video_input_path = video_input_path.replace("\\", "/")
+    srt_input_path = srt_input_path.replace("\\", "/")
+    
+    logger.debug(f"video_input_path={video_input_path}")
+    logger.debug(f"srt_input_path={srt_input_path}")
 
-    # Filtro para los subtítulos
-    subtitle_filter = f"subtitles={srt_input_path}:force_style='{subtitle_style}'"
+    # 🔹 Verificar si el archivo SRT existe
+    if not os.path.exists(srt_input_path.strip('"')):  # Quitar comillas antes de verificar
+        print(f"Error: No se encontró el archivo SRT en {srt_input_path}")
+        return None
 
-    # Filtro para el subrayado dinámico
-    underline_filter = (
-        "drawtext="
-        "fontcolor=yellow:"
-        "fontsize=24:"
-        "fontfile=/System/Library/Fonts/Supplemental/Arial.ttf:"  # Ruta a la fuente Arial
-        "text='':"
-        "x=(w-tw)/2:"  # Centrar horizontalmente
-        "y=h-th-10:"  # Posicionar cerca de la parte inferior
-        "box=1:"  # Habilitar fondo
-        "boxcolor=black@0.5:"  # Color del fondo (negro semitransparente)
-        "boxborderw=5:"  # Grosor del borde
-        "enable='between(t,0,10)'"  # Ejemplo: subrayado dinámico entre 0 y 10 segundos
-    )
+    try:
+        # 🔹 Pasar la ruta corregida en comillas dobles
+        ffmpeg_cmd = (
+            ffmpeg
+            .input(video_input_path)
+            .output(
+                output_video,
+                vf=f"subtitles={srt_input_path}",  # Comillas dobles en ruta SRT
+                vcodec="libx264",
+                acodec="aac",
+                strict="experimental"
+            )
+        )
 
-    # Combinar los filtros
-    filter_complex = f"{subtitle_filter},{underline_filter}"
+        # Ejecutar FFmpeg y capturar salida
+        ffmpeg_cmd.run(overwrite_output=True, capture_stdout=True, capture_stderr=True)
 
-    # Procesar el video con ffmpeg
-    (
-        ffmpeg
-        .input(video_input_path)
-        .output(output_video, vf=filter_complex)
-        .run(overwrite_output=True)
-    )
+        return output_video  # Retorna la ruta del video generado
 
-    # Retornar el path absoluto del video guardado
-    return os.path.abspath(output_video)
-
+    except ffmpeg.Error as e:
+        print("Error al procesar el video:", e.stderr.decode())
+        return None  # Retorna None si ocurre un error
 
 if __name__ == "__main__":
     from resources.buscar_clips import VideoDownloader

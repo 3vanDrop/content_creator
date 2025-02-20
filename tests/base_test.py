@@ -5,14 +5,16 @@ import pathlib
 from resources.buscar_clips import VideoDownloader
 from resources.generar_voz import generar_voz
 from resources.media_join import video_join, video_audio_join
+from resources.utils import read_yaml_conf
 
-class BaseVideoAssemble:
+class BaseTest:
 
     @classmethod
     def setup_class(cls):
         """before test"""
         cls.logger = logging.getLogger(__name__)
         cls.video_downloader = VideoDownloader(debug=True)
+        cls.config = read_yaml_conf()
 
         cls.clean_up_workspace()
 

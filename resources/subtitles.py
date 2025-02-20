@@ -1,5 +1,9 @@
 import whisper  
 import sys
+import logging
+import pathlib
+
+logger = logging.getLogger(__name__)
 
 def generar_subtitulos(video_path, output_srt_path="subtitles.srt", model_size="base"):
     """
@@ -13,11 +17,15 @@ def generar_subtitulos(video_path, output_srt_path="subtitles.srt", model_size="
     Retorna:
         str: Ruta del archivo SRT generado.
     """
-
+    model_size = "base" if sys.platform == "win32" else "small"
+    video_path = video_path if sys.platform == "win32" else video_path.replace("\\", "/")  
     # Cargar modelo de Whisper
+    logger.info(f"Attempting to load model {model_size}")
     model = whisper.load_model(model_size)
 
     # Transcribir el audio del video
+
+    logger.info(f"Attempting to transcribe {video_path}")
     result = model.transcribe(video_path)
 
     # Guardar la transcripción en formato SRT
@@ -32,7 +40,7 @@ def generar_subtitulos(video_path, output_srt_path="subtitles.srt", model_size="
             f.write(f"{format_time(start)} --> {format_time(end)}\n")
             f.write(f"{text}\n\n")
 
-    print(f"Subtítulos guardados en: {output_srt_path}")
+    logger.info(f"Subtítulos guardados en: {output_srt_path}")
     return output_srt_path
 
 

@@ -1,7 +1,6 @@
 """This library has been created using DeepSeek"""
 import ffmpeg
 import os
-import sys
 import logging
 
 from resources.utils import time_it

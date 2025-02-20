@@ -1,3 +1,4 @@
+import os
 from resources.subtitles import generar_subtitulos
 from tests.base_test import BaseTest
 

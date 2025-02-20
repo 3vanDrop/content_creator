@@ -1,6 +1,6 @@
 - VideoDownloader:
     carpeta_videos: local_videos  # Ruta absoluta de la carpeta de videos
-    carpeta_logs: slogs
+    carpeta_logs: logs
 
 - testing_samples:
     video_with_audio: testing_samples\output_with_audio.mp4

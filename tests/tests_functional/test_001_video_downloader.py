@@ -1,5 +1,11 @@
 from resources.buscar_clips import VideoDownloader
-import pathlib
+
+def test_single_query():
+    video_downloader = VideoDownloader(debug=True)  # Activar mensajes de depuración en la consola
+    found = video_downloader.query(name="stars", count=2)
+    print(f"[{len(found)}] - {found}")
+
+    assert len(found) == 2, "2 Elementos"
 
 def test_multiple_queries():
     video_downloader = VideoDownloader(debug=True)  # Activar mensajes de depuración en la consola

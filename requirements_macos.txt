@@ -223,3 +223,4 @@ typing_extensions==4.12.2
 urllib3==2.3.0
 whisper-ctranslate2==0.5.2
 yarl==1.18.3
+bs4

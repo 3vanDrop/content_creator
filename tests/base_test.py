@@ -1,6 +1,7 @@
 import os
 import logging
 import pathlib
+import random
 
 from resources.buscar_clips import VideoDownloader
 from resources.generar_voz import generar_voz
@@ -39,13 +40,14 @@ class BaseTest:
                 except Exception as e:
                     cls.logger.warning(f"No se pudo eliminar el archivo {ruta_completa}: {e}")
 
-    def create_video_with_audio(self, keywords: list = ["food"],
+    def create_video_with_audio(self, keywords: list = ["food"], video_count=2,
                                 tts_text: str = "Hola, este es un ejemplo de texto a voz."):
         """ Common function to be used accross many tests to generate video + audio demo"""
         # Descargar y unir video clips
         all_videos = list()
+        random.shuffle(keywords)
         for kw in keywords:
-            videos = self.video_downloader.query(name=kw, count=2)
+            videos = self.video_downloader.query(name=kw, count=video_count)
             all_videos += videos
 
         output_video = video_join(*all_videos)

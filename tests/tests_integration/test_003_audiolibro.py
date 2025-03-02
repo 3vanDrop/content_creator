@@ -33,5 +33,3 @@ def test_audiolibro():
 
     output_audio = generar_voz(" ".join(script), output_file=output_path)
     print(f"Archivo MP3 generado en: {output_audio}")
-
-    video_audio_join(*[output_video, output_audio])

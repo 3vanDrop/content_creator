@@ -2,8 +2,33 @@
     carpeta_videos: local_videos  # Ruta absoluta de la carpeta de videos
     carpeta_logs: logs
 
+- MusicDownloader:
+    carpeta_videos: local_music
+    carpeta_logs: logs
+
 - testing_samples:
     video_with_audio: testing_samples\output_with_audio.mp4
     video_no_audio: testing_samples\output_joined.mp4
     audio_mp3: testsing_samples\voz_generada.mp3
     subtitles_srt: testing_samples\subtitles.srt
+
+- Quizes:
+    intro_audio: quizes_audio/intro.mp3
+    tic_tac_audio: quizes_audio/tic_tac.mp3
+    success_audio: quizes_audio/success.mp3
+    siguiente_audio: quizes_audio/siguiente.mp3
+    facil_audio: quizes_audio/facil.mp3
+    end_facil_audio: quizes_audio/end_facil.mp3
+    medio_audio: quizes_audio/medio.mp3
+    dificil_audio: quizes_audio/dificil.mp3
+    ultima_audio: quizes_audio/ultima.mp3
+    end_audio: quizes_audio/end_audio.mp3
+    input_csv: quizes_audio/input.csv
+    input_multiple_csv: quizes_audio/input_multiple.csv
+    video_quiz_pages: /Users/karinalizarraga/Desktop/VideosEvan/29-feb-2025/separate_pages/*.mp4
+    video_quiz_pages_folder: /Users/karinalizarraga/Desktop/VideosEvan/29-feb-2025/separate_pages/
+    audio_to_join: /Users/karinalizarraga/Desktop/VideosEvan/29-feb-2025/audio_files/FinalAudio_*.mp3
+    video_to_join: /Users/karinalizarraga/Desktop/VideosEvan/29-feb-2025/non_audio_videos/vid*.mp4
+    video_output_join: /Users/karinalizarraga/Desktop/VideosEvan/29-feb-2025/final_videos/&Quiz &CulturaGeneral &*.mp4
+    zip_filepath: /Users/karinalizarraga/Desktop/VideosEvan/29-feb-2025/
+    zip_filename: pages.zip

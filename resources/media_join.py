@@ -2,13 +2,14 @@
 import ffmpeg
 import os
 import logging
+from pydub import AudioSegment
 
 from resources.utils import time_it
 
 logger = logging.getLogger(__name__)
 
 @time_it
-def video_join(*videos, output_resolution="1280x720"):
+def video_join(*videos, output_resolution="1280x720", output_path="output_joined.mp4"):
     # Crear una lista de inputs para ffmpeg
     inputs = [ffmpeg.input(video) for video in videos]
     
@@ -22,13 +23,12 @@ def video_join(*videos, output_resolution="1280x720"):
     concatenated = ffmpeg.concat(*scaled_videos, v=1, a=0)
     
     # Guardar el video resultante
-    output_path = "output_joined.mp4"
     concatenated.output(output_path).run()
     
     return output_path
 
 @time_it
-def video_audio_join(*media, output_resolution="1280x720"):
+def video_audio_join(*media, output_resolution="1280x720", output_path="output_with_audio.mp4"):
     # Separar videos y audios
     videos = [m for m in media if m.endswith(('.mp4', '.avi', '.mov'))]
     audios = [m for m in media if m.endswith(('.mp3', '.wav', '.aac'))]
@@ -50,11 +50,35 @@ def video_audio_join(*media, output_resolution="1280x720"):
     concatenated_audio = ffmpeg.concat(*audio_inputs, v=0, a=1)
     
     # Combinar video y audio
-    output_path = "output_with_audio.mp4"
     ffmpeg.output(concatenated_video, concatenated_audio, output_path).run()
     logger.info(f"Video joined to audio successfully! - {output_path}")
 
     return output_path
+
+
+@time_it
+def join_audio(*media, output_file="output.mp3"):
+    """
+    Une varios archivos de audio MP3 en uno solo.
+
+    :param media: Lista de rutas de archivos MP3.
+    :param output_file: Nombre del archivo de salida (por defecto "output.mp3").
+    :return: None
+    """
+    # Crear un objeto AudioSegment vacío
+    combined = AudioSegment.empty()
+
+    # Iterar sobre cada archivo de audio
+    for audio_file in media:
+        # Cargar el archivo MP3
+        audio = AudioSegment.from_mp3(audio_file)
+        # Añadir el audio al objeto combinado
+        combined += audio
+
+    # Exportar el audio combinado a un archivo MP3
+    combined.export(output_file, format="mp3")
+    print(f"Archivos unidos correctamente en {output_file}")
+
 
 @time_it
 def video_join_subs(video_input_path, srt_input_path, output_video):

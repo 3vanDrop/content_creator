@@ -15,3 +15,10 @@ class TestTTSAudio(BaseTest):
                                          output_file="test_audio2.mp3")
 
         assert self.file_exists(audio_path), f"Existe {audio_path}"
+
+    def test_audio_edgetts_speedup(self):
+        audio_path = edgetts_generar_voz("Hola este es un segundo test case para generar audio.",
+                                         output_file="test_audio3.mp3",
+                                         expected_duration_ms=4000)
+
+        assert self.file_exists(audio_path), f"Existe {audio_path}"

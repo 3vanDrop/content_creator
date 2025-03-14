@@ -7,6 +7,9 @@ import csv
 import shutil
 from functools import wraps
 from pathlib import Path
+from glob import glob
+import random
+import re
 
 # Configura el logger
 logging.basicConfig(level=logging.INFO)
@@ -136,6 +139,96 @@ def bulk_move_files(source_folder=".", file_extension="*.mp4", destination_folde
         # Mover el archivo
         shutil.move(str(file_path), str(destination_path))
         print(f"Movido: {file_path} -> {destination_path}")
+
+@time_it
+def bulk_move_files_from_list(filepaths, destination_folder, file_extension="*"):
+    """
+    Moves files from a list of filepaths to a specific directory.
+    
+    :param filepaths: List of file paths or a single directory path.
+    :param destination_folder: The destination directory where files will be moved.
+    :param file_extension: Optional filter for file extensions (e.g., "*.mp4").
+    """
+    # Ensure the destination folder exists
+    if not os.path.exists(destination_folder):
+        os.makedirs(destination_folder)
+
+    # If a single directory path is provided, get all files in that directory
+    if isinstance(filepaths, str) and os.path.isdir(filepaths):
+        filepaths = glob(os.path.join(filepaths, file_extension))
+
+    # Move each file to the destination folder
+    for filepath in filepaths:
+        if os.path.isfile(filepath) and (file_extension == "*" or filepath.endswith(file_extension[1:])):
+            filename = os.path.basename(filepath)
+            destination_path = os.path.join(destination_folder, filename)
+            shutil.move(filepath, destination_path)
+            logger.info(f"Moved: {filepath} -> {destination_path}")
+        else:
+            logger.info(f"Skipped (not a file or does not match extension): {filepath}")
+
+def get_random_file_path(directory_path, extensions=[".mp3", ".mp4"]):
+    # Ensure the provided path is a directory
+    if not os.path.isdir(directory_path):
+        raise ValueError(f"The provided path '{directory_path}' is not a valid directory.")
+
+    # List all files in the directory (excluding subdirectories)
+    files = [
+        f for f in os.listdir(directory_path)
+        if os.path.isfile(os.path.join(directory_path, f)) and os.path.splitext(f)[1].lower() in extensions
+    ]
+
+    # Check if there are any files in the directory
+    if not files:
+        raise ValueError(f"No files with extensions {extensions} found in the directory '{directory_path}'.")
+
+    # Randomly select a file
+    selected_file = random.choice(files)
+
+    # Return the absolute path of the selected file
+    return os.path.abspath(os.path.join(directory_path, selected_file))
+
+def natural_sort_key(name):
+    """
+    Key function for natural sorting of names with numeric suffixes.
+    """
+    # Use a regular expression to find all digits in the name
+    parts = re.split('(\d+)', name)
+    # Convert digits to integers, leave non-digits as is
+    return [int(part) if part.isdigit() else part for part in parts]
+
+def sort_names(names):
+    """
+    Sort a list of names with numeric suffixes in natural order.
+    """
+    return sorted(names, key=natural_sort_key)
+
+def get_all_files(directory_path, extension=[".mp4", ".mp3"]):
+    """
+    Returns a list of all files found within the given directory path.
+
+    Args:
+        directory_path (str): The path to the directory to search for files.
+
+    Returns:
+        list: A list of absolute file paths for all files found.
+    """
+    # Ensure the provided path is a directory
+    if not os.path.isdir(directory_path):
+        raise ValueError(f"The provided path '{directory_path}' is not a valid directory.")
+
+    # List to store all file paths
+    file_list = []
+
+    # Walk through the directory tree
+    for root, _, files in os.walk(directory_path):
+        for file in files:
+            # Construct the absolute file path and add it to the list
+            file_path = os.path.join(root, file)
+            if any(map(file_path.endswith, extension)):
+                file_list.append(file_path)
+
+    return sort_names(file_list)
 
 
 if __name__ == "__main__":

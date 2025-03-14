@@ -1,0 +1,2 @@
+CONFIG_YAML_KEY = "Quizes_v2_CineTV"
+TOTAL_QUIZES = 50

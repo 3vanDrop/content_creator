@@ -1,0 +1,2 @@
+CONFIG_YAML_KEY = "Quizes_v2_HistoriaMx"
+TOTAL_QUIZES = 55

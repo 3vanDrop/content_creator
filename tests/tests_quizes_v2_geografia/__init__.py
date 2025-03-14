@@ -1,0 +1,1 @@
+CONFIG_YAML_KEY = "Quizes_v2_Geografia"

@@ -39,7 +39,7 @@ async def generar_audio(texto, voz="es-MX-DaliaNeural", output_file="voz_generad
 
         logger.info(f"current_duration_ms={current_duration_ms}, expected_duration_ms={expected_duration_ms}")
         # Si el audio es más largo que el tiempo esperado, acelerarlo
-        if current_duration_ms > expected_duration_ms:
+        if current_duration_ms > expected_duration_ms and abs(current_duration_ms - expected_duration_ms) > 100:
             # Calcular el factor de aceleración
             speed_factor = current_duration_ms / expected_duration_ms
             
@@ -53,12 +53,14 @@ async def generar_audio(texto, voz="es-MX-DaliaNeural", output_file="voz_generad
             
             # Generar un segmento de silencio
             silence = AudioSegment.silent(duration=silence_duration_ms)
+            logger.info(f"Adding silent segment for {len(silence)}")
             
             # Concatenar el silencio al final del audio
             audio = audio + silence
         
         # Guardar el audio ajustado
         audio.export(output_file, format="mp3")
+        logger.info(f"Completed audio duration={len(audio)}")
     
     # Obtener la ruta absoluta
     path_absoluto = os.path.abspath(output_file)

@@ -6,6 +6,10 @@ import google_auth_oauthlib.flow
 import googleapiclient.discovery
 import googleapiclient.http
 from pathlib import Path
+import logging
+from resources.calendario import agregar_eventos_a_calendario
+
+logger = logging.getLogger(__name__)
 
 def upload_to_youtube(
     video_path,
@@ -19,7 +23,7 @@ def upload_to_youtube(
     try:
         # Autenticación con OAuth 2.0
         flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
-            "client_secret_1076071101464-bm19qlcf7nj4o5ieav3jem0rai0bu4f7.apps.googleusercontent.com.json", ["https://www.googleapis.com/auth/youtube.upload"]
+            "client_secret_1076071101464-kr1iupe2mpsddl3smjqn202c3l3q7cf4.apps.googleusercontent.com.json", ["https://www.googleapis.com/auth/youtube.upload"]
         )
         credentials = flow.run_local_server(port=0)
         youtube = googleapiclient.discovery.build("youtube", "v3", credentials=credentials)
@@ -64,17 +68,50 @@ def upload_to_youtube(
 def upload_videos_from_folder(folder_path, tags=None, description="", status="public", schedule_time=None, custom_title=None,
                               schedule_every_several_hours=None):
     """Itera sobre una carpeta y sube todos los videos .mp4 a YouTube."""
-    timestamp = int(time.time())
-    old_folder = f"old.{timestamp}"
-    os.mkdir(os.path.join(folder_path, old_folder))
     for filename in os.listdir(folder_path):
         schedule_time = schedule_time + datetime.timedelta(hours=schedule_every_several_hours) if schedule_every_several_hours\
         else schedule_time
         if filename.endswith(".mp4"):
+            logger.info(f"Attempting to upload {filename} - ⏱️ Schedule time: {schedule_time}")
             video_path = os.path.join(folder_path, filename)
             print(f"Subiendo: {video_path}")
             assert upload_to_youtube(video_path, tags, description, status, schedule_time,
                                      custom_title=custom_title)
+            shutil.move(video_path, os.path.join(folder_path, "uploaded"))
+
+            logger.info("Agregando evento al calendario...")
+            agregar_eventos_a_calendario(
+                titulo=custom_title,
+                descripcion=f"{custom_title} scheduled",
+                lugar="YouTube - BrainHub Channel",
+                inicio=schedule_time,
+                fin=schedule_time + datetime.timedelta(hours=3, minutes=1)
+            )
+
+def upload_videos_from_folder_v2(folder_path, tags=None, description="", status="public", schedule_time=None, custom_title=None,
+                              schedule_every_several_hours=None):
+    """Itera sobre una carpeta y sube todos los videos .mp4 a YouTube."""
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".mp4"):
+            logger.info(f"Attempting to upload {filename} - ⏱️ Schedule time: {schedule_time}")
+            video_path = os.path.join(folder_path, filename)
+            print(f"Subiendo: {video_path}")
+            assert upload_to_youtube(video_path, tags(), description(), status, schedule_time,
+                                     custom_title=custom_title)
+            shutil.move(video_path, os.path.join(folder_path, "uploaded"))
+
+            logger.info("Agregando evento al calendario...")
+            agregar_eventos_a_calendario(
+                titulo=custom_title,
+                descripcion=f"{custom_title} scheduled",
+                lugar="YouTube - BrainHub Channel",
+                inicio=schedule_time,
+                fin=schedule_time + datetime.timedelta(hours=3, minutes=1)
+            )
+
+            # Next scheduled video will happen
+            schedule_time = schedule_time + datetime.timedelta(hours=schedule_every_several_hours) if schedule_every_several_hours\
+            else schedule_time
 
 # Ejemplo de uso
 # folder_path = "./videos"  # Ruta de la carpeta con videos

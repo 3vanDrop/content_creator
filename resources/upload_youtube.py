@@ -8,6 +8,7 @@ import googleapiclient.http
 from pathlib import Path
 import logging
 from resources.calendario import agregar_eventos_a_calendario
+from resources.schedule_yaml import look_up_for_next_available_block, schedule_on_available_block
 
 logger = logging.getLogger(__name__)
 
@@ -112,6 +113,21 @@ def upload_videos_from_folder_v2(folder_path, tags=None, description="", status=
             # Next scheduled video will happen
             schedule_time = schedule_time + datetime.timedelta(hours=schedule_every_several_hours) if schedule_every_several_hours\
             else schedule_time
+
+def upload_videos_from_folder_v3(folder_path, tags=None, description="", status="public", schedule_time=None, custom_title=None,
+                                 schedule_every_several_hours=None):
+    """Itera sobre una carpeta y sube todos los videos .mp4 a YouTube."""
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".mp4"):
+            seven_hours_offset = datetime.timedelta(hours=7)  # Mexico time
+            next_available_block = look_up_for_next_available_block() + seven_hours_offset
+            logger.info(f"Attempting to upload {filename} - ⏱️ Schedule time: {next_available_block}")
+            video_path = os.path.join(folder_path, filename)
+            print(f"Subiendo: {video_path}")
+            assert upload_to_youtube(video_path, tags(), description(), status, next_available_block,
+                                     custom_title=custom_title)
+            schedule_on_available_block(custom_title)
+            shutil.move(video_path, os.path.join(folder_path, "uploaded"))
 
 # Ejemplo de uso
 # folder_path = "./videos"  # Ruta de la carpeta con videos

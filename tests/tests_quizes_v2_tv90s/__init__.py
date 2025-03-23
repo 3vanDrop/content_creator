@@ -1,0 +1,2 @@
+CONFIG_YAML_KEY = "Quizes_v2_90sTVShow"
+TOTAL_QUIZES = 50

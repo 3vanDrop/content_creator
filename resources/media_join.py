@@ -43,7 +43,47 @@ def _attempt_video_join(*videos, output_resolution, output_path):
     return output_path
 
 @time_it
-def video_join(*videos, output_resolution="1280x720", output_path="output_joined.mp4"):
+def video_join(*videos, output_resolution="1280x720", output_path="output_joined.mp4", output_fps=30):
+    # Crear una lista de inputs para ffmpeg
+    try:
+        inputs = [ffmpeg.input(video) for video in videos]
+        
+        # Normalizar FPS, escalar resolución y gestionar audio
+        processed_videos = []
+        processed_audios = []
+        
+        for i, input_video in enumerate(inputs):
+            # Normalizar FPS y escalar video
+            processed_video = input_video.video.filter('fps', fps=output_fps).filter('scale', output_resolution)
+            processed_videos.append(processed_video)
+            
+            # Verificar si el video tiene audio
+            try:
+                if input_video.audio is not None:
+                    processed_audios.append(input_video.audio)
+                else:
+                    silent_audio = ffmpeg.input('anullsrc', format='lavfi', channel_layout='stereo', sample_rate=44100)
+                    processed_audios.append(silent_audio.audio)
+            except Exception as e:
+                logger.warning(f"Error processing audio for video {i}: {e}")
+                silent_audio = ffmpeg.input('anullsrc', format='lavfi', channel_layout='stereo', sample_rate=44100)
+                processed_audios.append(silent_audio.audio)
+        
+        # Concatenar videos y audios
+        concatenated_video = ffmpeg.concat(*processed_videos, v=1, a=0)
+        concatenated_audio = ffmpeg.concat(*processed_audios, v=0, a=1)
+        
+        # Combinar el video y el audio
+        output = ffmpeg.output(concatenated_video, concatenated_audio, output_path)
+        output.run()
+        
+        return output_path
+    except AssertionError as error:
+        logger.warning("Unable to join using main function. Using _attempt_video_join() instead")
+        return _attempt_video_join(*videos, output_resolution, output_path)
+
+@time_it
+def video_join_old(*videos, output_resolution="1280x720", output_path="output_joined.mp4"):
     # Crear una lista de inputs para ffmpeg
     try:
         inputs = [ffmpeg.input(video) for video in videos]
@@ -64,6 +104,41 @@ def video_join(*videos, output_resolution="1280x720", output_path="output_joined
     except Exception as error:
         logger.warning("Unable to join using main function. Using _attempt_video_join() instead")
         return _attempt_video_join(*videos, output_resolution, output_path)
+
+@time_it
+def video_add_silent_audio_track(input_video, output_path):
+    """
+    Agrega una pista de audio de silencio a un video que no tiene audio.
+
+    :param input_video: Ruta del video de entrada.
+    :param output_path: Ruta del video de salida con la pista de audio agregada.
+    """
+    try:
+        # Cargar el video de entrada
+        input_stream = ffmpeg.input(input_video)
+
+        # Crear un stream de audio silencioso usando anullsrc
+        silent_audio = ffmpeg.input(
+            'anullsrc=channel_layout=stereo:sample_rate=44100', 
+            format='lavfi'
+        )
+
+        # Combinar el video con el audio silencioso
+        output = ffmpeg.output(
+            input_stream.video,  # Stream de video original
+            silent_audio,       # Stream de audio silencioso
+            output_path,        # Ruta de salida
+            vcodec='copy',      # Copiar el códec de video sin re-codificar
+            acodec='aac',      # Usar el códec AAC para el audio
+            shortest=None      # Asegurar que la salida tenga la duración del video
+        )
+
+        # Ejecutar el comando de ffmpeg
+        output.run(overwrite_output=True)
+
+        print(f"Video con audio silencioso guardado en: {output_path}")
+    except Exception as e:
+        print(f"Error al procesar el video: {e}")
 
 @time_it
 def video_audio_join(*media, output_resolution="1280x720", output_path="output_with_audio.mp4"):

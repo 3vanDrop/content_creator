@@ -1,0 +1,2 @@
+CONFIG_YAML_KEY = "Quizes_v2_1_TV_Mexicana"
+TOTAL_QUIZES = 200

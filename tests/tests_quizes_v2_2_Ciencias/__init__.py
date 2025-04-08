@@ -1,0 +1,2 @@
+CONFIG_YAML_KEY = "Quizes_v2_2_Ciencias"
+TOTAL_QUIZES = 200

@@ -11,10 +11,10 @@ class TestJoinClipsVideoAudio(BaseTest):
     def test_join_clips_video(self):
         total_quizes = TOTAL_QUIZES #10
 
-        for inciso in ["falso"]:
+        for inciso in ["cierto", "falso"]:
             audio_path = lambda x: self.config[CONFIG_YAML_KEY]["audio_clips"].replace("#", str(x)).replace("*", inciso)
             video_path = lambda x: self.config[CONFIG_YAML_KEY]["video_to_join"].replace("#", str(x)).replace("*", inciso)
-            dst_path = lambda x: self.config[CONFIG_YAML_KEY]["ultima_pregunta"].replace(".mp4", f"_{x}.mp4")
+            dst_path = lambda x: self.config[CONFIG_YAML_KEY]["video_output_join"].replace(".mp4", f"_{x}.mp4")
             for i in range(total_quizes): # 0 - 9
                 timestamp = str(time.time()).replace(".", "_")  # Make them unique
                 self.logger.info(f"Joining Final Video {i}...")

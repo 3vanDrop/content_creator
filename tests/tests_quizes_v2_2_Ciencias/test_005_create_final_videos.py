@@ -40,7 +40,7 @@ class TestJoinClipsVideoAudio(BaseTest):
             output_video_path = dst_path(timestamp)
             self.logger.info(f"outro={outro}, thumbnail={thumbnail}, video_clips={video_clips}, output_video_path={output_video_path}")
     
-            final_video_clips = video_clips[:1] + [thumbnail] + video_clips[1:] + [outro]
+            final_video_clips = video_clips[:1] + [thumbnail] + video_clips[1:]
             video_join(*final_video_clips,
                        output_resolution="1080x1920",
                        output_path=output_video_path)

@@ -11,7 +11,7 @@ import os
 
 class TestCreateAudios(BaseTest):
     def test_create_audios(self):
-        for key in ["falso"]:
+        for key in ["cierto", "falso"]:
             # Read input csv
             csv_file = read_csv(self.config[CONFIG_YAML_KEY]["input_respuestas"].replace("*", key))
             output_clips_path = lambda num: self.config[CONFIG_YAML_KEY]["audio_clips"].replace("*", key).replace("#", str(num))
